@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AssessMate</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="#" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand pt-4">
+      <a class="navbar-brand ps-3" href="#">
+          <img src="./assets/imgs/assessmate.png" class="app-brand-responsive">
+      </a>
+      <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"></form>
+      <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+          <li class="nav-item dropstart">
+              <a class="nav-link dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./assets/imgs/user.png" class="user-logo">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              </ul>
+          </li>
+      </ul>
+    </nav>
+    <hr size="8"/>
+    <div class="container">
+      <div class="container">
+        <a href="#" class="btn btn-add-question float-start" data-bs-toggle="modal" data-bs-target="#myModal">  
+          <img src="./assets/imgs/add.png">
+          <span class="pt-5">Criteria</span>
+        </a>
+        <a href="#"><img src="./assets/imgs/sort.png" class="sort-image mt-2 float-end"></a>
+      </div>
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <textarea class="form-control" rows="5" placeholder="input your criteria here. . ."></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-save-modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom">
+      <div class="p-2 background-footer-color">
+        <div class="d-flex justify-content-evenly">
+          <a href="index.html"><img src="./assets/imgs/add-icon.png" class="icon-question"></a>
+          <a href="choice.html"><img src="./assets/imgs/camera--v3.png" class="icon-camera"></a>
+          <a href="criteria.html"><img src="./assets/imgs/icon-criteria.png" class="icon-rubrics"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

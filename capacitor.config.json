@@ -1,0 +1,11 @@
+{
+  "appId": "com.assessmate.app",
+  "appName": "AssessMate",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

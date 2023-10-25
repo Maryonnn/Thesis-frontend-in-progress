@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AssessMate</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="#" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container pt-5">
+        <img src="./assets/imgs/assessmate.png" class="mx-auto d-block img-fluid mt-5"/>
+      </div>
+      <div class="container mt-4">
+        <form class="login">
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="email" />
+            <label for="inputEmail">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input class="form-control" type="password" />
+            <label for="inputPassword">Password</label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" />
+            <label class="form-check-label" for="RememberPassword">Remember password</label>
+          </div>
+          <div class="mt-4 mb-0 text-center">
+            <a href="index.html" class="btn btn-login">Sign in</a>
+          </div>
+        </form>
+        <div class="container text-center py-3 mt-3">
+          <div class="small"><a href="register.html">Need an account? Tap here!</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
