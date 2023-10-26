@@ -9,27 +9,18 @@
     height: auto;
 }
 
-.user-logo{
+.user-logo, .sort-image{
     width: 25px;
     height: 25px;
 }
 
-.sort-image{
-  width: 25px;
-  height: 25px;
-}
-
-.invisible{
-  color: white;
-}
-
 .background-footer-color{
-    background-color: #ff7800;
+    background-color: rgb(64, 179, 250);
 }
 
 .btn-add-question, .btn-register,
 .btn-save-modal{
-    background-color: #ff7800 !important;
+    background-color: rgb(64, 179, 250) !important;
     border: none !important;
     border-radius: 15px !important;
     color: white !important;
@@ -39,13 +30,29 @@
 }
 
 .btn-login{
-  background-color: #ff7800 !important;
+  background-color: rgb(64, 179, 250) !important;
   border: none !important;
   border-radius: 15px !important;
   color: white !important;
   padding: 7px 13px !important;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
   width: 200px !important;
+}
+
+.btn-login:active{
+  background-color: #ff7800 !important;
+}
+
+.btn-register:active{
+  background-color: #ff7800 !important;
+}
+
+.btn-add-question:active{
+  background-color: #ff7800 !important;
+}
+
+.btn-save-modal:active{
+  background-color: #ff7800 !important;
 }
 
 .icon-camera, .icon-rubrics{
@@ -58,30 +65,15 @@
   height: 33px;
 }
 
-
-
-
-.dropdown {
-  position: relative;
-  display: inline-block;
+.click{
+  border: none;
+  background-color: rgb(64, 179, 250);
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
+.click:active{
+  background-color: #ff7800 !important;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown-item:active{
+  background-color: #ff7800 !important;
 }
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}

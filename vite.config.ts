@@ -14,6 +14,7 @@ export default defineConfig({
         register: path.resolve(__dirname, 'src/register.html'),
         criteria: path.resolve(__dirname, 'src/criteria.html'),
         choice: path.resolve(__dirname, 'src/choice.html'),
+        profile: path.resolve(__dirname, 'src/profile.html'),
       },
     }
   },
